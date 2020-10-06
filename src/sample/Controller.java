@@ -12,5 +12,8 @@ public class Controller {
     public TextField textField1;
 
     public void clickButton(ActionEvent actionEvent) {
+        textArea1.appendText(textField1.getText() + "/n");
+        textField1.requestFocus();
+        textField1.clear();
     }
 }
